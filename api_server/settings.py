@@ -26,7 +26,7 @@ SECRET_KEY = '%2)%cp7!(t@5asc2ndm*ryj28u-djp18cbfk!^ch*s_-@dc!x8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['46.101.227.60']
+ALLOWED_HOSTS = ['46.101.227.60', '127.0.0.1']
 
 
 # Application definition
@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api_server.apps.todo',
-    'rest_framework'
+    'rest_framework',
+    'versatileimagefield',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'api_server/static'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'api_server/media')
