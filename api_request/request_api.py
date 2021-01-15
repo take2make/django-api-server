@@ -15,6 +15,6 @@ def delete_json(url, id):
 	return response
 
 url = "http://127.0.0.1:8000/api/todo/"
-print(send_json(url, 'купить молоко', 'в пяторочке', 'cat.png'))
+print(send_json(url, 'купить молоко2', 'в пяторочке', 'cat.png'))
 #delete_json(url)
 print(get_json(url))
